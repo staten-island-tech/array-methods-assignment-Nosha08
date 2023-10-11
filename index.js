@@ -1,7 +1,7 @@
 const coolPeople = [{
     name: 'Mahatma Ghandi',
     nation: 'India',
-    random: [1, 10, 123214],
+    random: [1, 10, -123214],
 },
 {
     name: 'Mark Erlenwein',
@@ -14,5 +14,9 @@ const coolPeople = [{
     random: [-9., 124124, 0]
 }]
 
-coolPeople.forEach((person) => console.log(person))
-coolPeople.filter((person) => person.random)
+coolPeople.forEach((person) => console.log(person.name));
+coolPeople.forEach((person) => console.log(person));
+coolPeople.forEach((person) => person.random.forEach((item) => console.log(item)));
+
+const random = coolPeople.filter((person) => person.random.every((item) => item > 10));
+console.log(random)
