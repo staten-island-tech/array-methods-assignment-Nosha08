@@ -16,6 +16,11 @@ const coolPeople = [{
 
 coolPeople.forEach((person) => console.log(person.name));
 coolPeople.forEach((person) => console.log(person));
+coolPeople.forEach((person) => {
+    console.log(person.nation),
+    console.log(person.random)
+})
+
 coolPeople.forEach((person) => person.random.forEach((item) => console.log(item)));
 
 const random = coolPeople.filter((person) => person.random.every((item) => item > 10));
