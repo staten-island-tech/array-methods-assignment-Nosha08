@@ -15,7 +15,9 @@ const coolPeople = [{
 }]
 
 coolPeople.forEach((person) => console.log(person.name));
+
 coolPeople.forEach((person) => console.log(person));
+
 coolPeople.forEach((person) => {
     console.log(person.nation),
     console.log(person.random)
